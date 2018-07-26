@@ -9,8 +9,8 @@ Resource          resource.robot
 Valid Login
     Open Browser To Login Page
     Input Username    oktyuyar@gmail.com
-    Input Password    1q2w3e
+    Click Continue Button
+    Input Password    1q2w3e.
     Submit Credentials
     Welcome Page Should Be Open
-#    [Teardown]    Close Browser
-
+    [Teardown]    Close Browser

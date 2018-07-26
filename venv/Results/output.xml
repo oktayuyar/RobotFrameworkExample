@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.0.4 (Python 3.7.0 on darwin)" generated="20180726 07:56:14.548">
+<suite id="s1" name="robotExample" source="/Users/sahabt/PycharmProjects/RobotFrameworkExample/venv/robotExample.robot">
+<test id="s1-t1" name="Valid Login">
+<kw name="Open Browser To Login Page" library="resource">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${WELCOME URL}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20180726 07:56:14.719" level="INFO">Opening browser 'Chrome' to base url 'http://www.amazon.com/'.</msg>
+<status status="PASS" starttime="20180726 07:56:14.719" endtime="20180726 07:56:21.149"></status>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20180726 07:56:21.150" endtime="20180726 07:56:21.264"></status>
+</kw>
+<kw name="Set Selenium Speed" library="Selenium2Library">
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<arguments>
+<arg>${DELAY}</arg>
+</arguments>
+<status status="PASS" starttime="20180726 07:56:21.264" endtime="20180726 07:56:21.265"></status>
+</kw>
+<kw name="Click Link" library="Selenium2Library">
+<doc>Clicks a link identified by ``locator``.</doc>
+<arguments>
+<arg>nav-link-accountList</arg>
+</arguments>
+<msg timestamp="20180726 07:56:21.265" level="INFO">Clicking link 'nav-link-accountList'.</msg>
+<status status="PASS" starttime="20180726 07:56:21.265" endtime="20180726 07:56:27.131"></status>
+</kw>
+<kw name="Login Page Should Be Open" library="resource">
+<kw name="Title Should Be" library="Selenium2Library">
+<doc>Verifies that current page title equals ``title``.</doc>
+<arguments>
+<arg>${LOGIN PAGE TITLE}</arg>
+</arguments>
+<msg timestamp="20180726 07:56:27.136" level="INFO">Page title is 'Amazon Sign In'.</msg>
+<status status="PASS" starttime="20180726 07:56:27.131" endtime="20180726 07:56:27.136"></status>
+</kw>
+<status status="PASS" starttime="20180726 07:56:27.131" endtime="20180726 07:56:27.136"></status>
+</kw>
+<status status="PASS" starttime="20180726 07:56:14.719" endtime="20180726 07:56:27.136"></status>
+</kw>
+<kw name="Input Username" library="resource">
+<arguments>
+<arg>oktyuyar@gmail.com</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>email</arg>
+<arg>${username}</arg>
+</arguments>
+<msg timestamp="20180726 07:56:27.138" level="INFO">Typing text 'oktyuyar@gmail.com' into text field 'email'.</msg>
+<status status="PASS" starttime="20180726 07:56:27.137" endtime="20180726 07:56:27.299"></status>
+</kw>
+<status status="PASS" starttime="20180726 07:56:27.137" endtime="20180726 07:56:27.299"></status>
+</kw>
+<kw name="Click Continue Button" library="resource">
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>continue</arg>
+</arguments>
+<msg timestamp="20180726 07:56:27.300" level="INFO">Clicking button 'continue'.</msg>
+<status status="PASS" starttime="20180726 07:56:27.300" endtime="20180726 07:56:33.265"></status>
+</kw>
+<status status="PASS" starttime="20180726 07:56:27.300" endtime="20180726 07:56:33.266"></status>
+</kw>
+<kw name="Input Password" library="resource">
+<arguments>
+<arg>1q2w3e.</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>password</arg>
+<arg>${password}</arg>
+</arguments>
+<msg timestamp="20180726 07:56:33.266" level="INFO">Typing text '1q2w3e.' into text field 'password'.</msg>
+<status status="PASS" starttime="20180726 07:56:33.266" endtime="20180726 07:56:33.369"></status>
+</kw>
+<status status="PASS" starttime="20180726 07:56:33.266" endtime="20180726 07:56:33.369"></status>
+</kw>
+<kw name="Submit Credentials" library="resource">
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>signInSubmit</arg>
+</arguments>
+<msg timestamp="20180726 07:56:33.370" level="INFO">Clicking button 'signInSubmit'.</msg>
+<status status="PASS" starttime="20180726 07:56:33.369" endtime="20180726 07:56:38.448"></status>
+</kw>
+<status status="PASS" starttime="20180726 07:56:33.369" endtime="20180726 07:56:38.449"></status>
+</kw>
+<kw name="Welcome Page Should Be Open" library="resource">
+<kw name="Title Should Be" library="Selenium2Library">
+<doc>Verifies that current page title equals ``title``.</doc>
+<arguments>
+<arg>${WELCOME PAGE TITLE}</arg>
+</arguments>
+<msg timestamp="20180726 07:56:38.474" level="INFO">Page title is 'Amazon.com: Online Shopping for Electronics, Apparel, Computers, Books, DVDs &amp; more'.</msg>
+<status status="PASS" starttime="20180726 07:56:38.450" endtime="20180726 07:56:38.475"></status>
+</kw>
+<status status="PASS" starttime="20180726 07:56:38.449" endtime="20180726 07:56:38.476"></status>
+</kw>
+<kw name="Close Browser" library="Selenium2Library" type="teardown">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20180726 07:56:38.480" endtime="20180726 07:56:38.598"></status>
+</kw>
+<status status="PASS" starttime="20180726 07:56:14.718" endtime="20180726 07:56:38.598" critical="yes"></status>
+</test>
+<doc>A test suite with a single test for valid login.
+
+This test has a workflow that is created using keywords in
+the imported resource file.</doc>
+<status status="PASS" starttime="20180726 07:56:14.550" endtime="20180726 07:56:38.602"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" id="s1" name="robotExample">robotExample</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

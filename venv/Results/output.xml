@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.0.4 (Python 3.7.0 on darwin)" generated="20180726 07:56:14.548">
-<suite id="s1" name="robotExample" source="/Users/sahabt/PycharmProjects/RobotFrameworkExample/venv/robotExample.robot">
+<robot generator="Robot 3.0.4 (Python 3.7.0 on darwin)" generated="20180727 07:55:07.045">
+<suite id="s1" name="Sample" source="/Users/sahabt/PycharmProjects/Robot/venv/Sample.robot">
 <test id="s1-t1" name="Valid Login">
 <kw name="Open Browser To Login Page" library="resource">
 <kw name="Open Browser" library="Selenium2Library">
@@ -9,27 +9,27 @@
 <arg>${WELCOME URL}</arg>
 <arg>${BROWSER}</arg>
 </arguments>
-<msg timestamp="20180726 07:56:14.719" level="INFO">Opening browser 'Chrome' to base url 'http://www.amazon.com/'.</msg>
-<status status="PASS" starttime="20180726 07:56:14.719" endtime="20180726 07:56:21.149"></status>
+<msg timestamp="20180727 07:55:07.251" level="INFO">Opening browser 'Chrome' to base url 'http://www.amazon.com/'.</msg>
+<status status="PASS" starttime="20180727 07:55:07.251" endtime="20180727 07:55:14.494"></status>
 </kw>
 <kw name="Maximize Browser Window" library="Selenium2Library">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20180726 07:56:21.150" endtime="20180726 07:56:21.264"></status>
+<status status="PASS" starttime="20180727 07:55:14.495" endtime="20180727 07:55:15.136"></status>
 </kw>
 <kw name="Set Selenium Speed" library="Selenium2Library">
 <doc>Sets the delay that is waited after each Selenium command.</doc>
 <arguments>
 <arg>${DELAY}</arg>
 </arguments>
-<status status="PASS" starttime="20180726 07:56:21.264" endtime="20180726 07:56:21.265"></status>
+<status status="PASS" starttime="20180727 07:55:15.136" endtime="20180727 07:55:15.138"></status>
 </kw>
 <kw name="Click Link" library="Selenium2Library">
 <doc>Clicks a link identified by ``locator``.</doc>
 <arguments>
 <arg>nav-link-accountList</arg>
 </arguments>
-<msg timestamp="20180726 07:56:21.265" level="INFO">Clicking link 'nav-link-accountList'.</msg>
-<status status="PASS" starttime="20180726 07:56:21.265" endtime="20180726 07:56:27.131"></status>
+<msg timestamp="20180727 07:55:15.139" level="INFO">Clicking link 'nav-link-accountList'.</msg>
+<status status="PASS" starttime="20180727 07:55:15.138" endtime="20180727 07:55:24.680"></status>
 </kw>
 <kw name="Login Page Should Be Open" library="resource">
 <kw name="Title Should Be" library="Selenium2Library">
@@ -37,12 +37,12 @@
 <arguments>
 <arg>${LOGIN PAGE TITLE}</arg>
 </arguments>
-<msg timestamp="20180726 07:56:27.136" level="INFO">Page title is 'Amazon Sign In'.</msg>
-<status status="PASS" starttime="20180726 07:56:27.131" endtime="20180726 07:56:27.136"></status>
+<msg timestamp="20180727 07:55:24.699" level="INFO">Page title is 'Amazon Sign In'.</msg>
+<status status="PASS" starttime="20180727 07:55:24.682" endtime="20180727 07:55:24.699"></status>
 </kw>
-<status status="PASS" starttime="20180726 07:56:27.131" endtime="20180726 07:56:27.136"></status>
+<status status="PASS" starttime="20180727 07:55:24.681" endtime="20180727 07:55:24.699"></status>
 </kw>
-<status status="PASS" starttime="20180726 07:56:14.719" endtime="20180726 07:56:27.136"></status>
+<status status="PASS" starttime="20180727 07:55:07.250" endtime="20180727 07:55:24.699"></status>
 </kw>
 <kw name="Input Username" library="resource">
 <arguments>
@@ -54,10 +54,10 @@
 <arg>email</arg>
 <arg>${username}</arg>
 </arguments>
-<msg timestamp="20180726 07:56:27.138" level="INFO">Typing text 'oktyuyar@gmail.com' into text field 'email'.</msg>
-<status status="PASS" starttime="20180726 07:56:27.137" endtime="20180726 07:56:27.299"></status>
+<msg timestamp="20180727 07:55:24.701" level="INFO">Typing text 'oktyuyar@gmail.com' into text field 'email'.</msg>
+<status status="PASS" starttime="20180727 07:55:24.701" endtime="20180727 07:55:24.979"></status>
 </kw>
-<status status="PASS" starttime="20180726 07:56:27.137" endtime="20180726 07:56:27.299"></status>
+<status status="PASS" starttime="20180727 07:55:24.700" endtime="20180727 07:55:24.979"></status>
 </kw>
 <kw name="Click Continue Button" library="resource">
 <kw name="Click Button" library="Selenium2Library">
@@ -65,10 +65,10 @@
 <arguments>
 <arg>continue</arg>
 </arguments>
-<msg timestamp="20180726 07:56:27.300" level="INFO">Clicking button 'continue'.</msg>
-<status status="PASS" starttime="20180726 07:56:27.300" endtime="20180726 07:56:33.265"></status>
+<msg timestamp="20180727 07:55:24.980" level="INFO">Clicking button 'continue'.</msg>
+<status status="PASS" starttime="20180727 07:55:24.980" endtime="20180727 07:55:25.626"></status>
 </kw>
-<status status="PASS" starttime="20180726 07:56:27.300" endtime="20180726 07:56:33.266"></status>
+<status status="PASS" starttime="20180727 07:55:24.979" endtime="20180727 07:55:25.627"></status>
 </kw>
 <kw name="Input Password" library="resource">
 <arguments>
@@ -80,10 +80,10 @@
 <arg>password</arg>
 <arg>${password}</arg>
 </arguments>
-<msg timestamp="20180726 07:56:33.266" level="INFO">Typing text '1q2w3e.' into text field 'password'.</msg>
-<status status="PASS" starttime="20180726 07:56:33.266" endtime="20180726 07:56:33.369"></status>
+<msg timestamp="20180727 07:55:25.630" level="INFO">Typing text '1q2w3e.' into text field 'password'.</msg>
+<status status="PASS" starttime="20180727 07:55:25.628" endtime="20180727 07:55:25.759"></status>
 </kw>
-<status status="PASS" starttime="20180726 07:56:33.266" endtime="20180726 07:56:33.369"></status>
+<status status="PASS" starttime="20180727 07:55:25.627" endtime="20180727 07:55:25.759"></status>
 </kw>
 <kw name="Submit Credentials" library="resource">
 <kw name="Click Button" library="Selenium2Library">
@@ -91,10 +91,10 @@
 <arguments>
 <arg>signInSubmit</arg>
 </arguments>
-<msg timestamp="20180726 07:56:33.370" level="INFO">Clicking button 'signInSubmit'.</msg>
-<status status="PASS" starttime="20180726 07:56:33.369" endtime="20180726 07:56:38.448"></status>
+<msg timestamp="20180727 07:55:25.760" level="INFO">Clicking button 'signInSubmit'.</msg>
+<status status="PASS" starttime="20180727 07:55:25.760" endtime="20180727 07:55:29.513"></status>
 </kw>
-<status status="PASS" starttime="20180726 07:56:33.369" endtime="20180726 07:56:38.449"></status>
+<status status="PASS" starttime="20180727 07:55:25.759" endtime="20180727 07:55:29.514"></status>
 </kw>
 <kw name="Welcome Page Should Be Open" library="resource">
 <kw name="Title Should Be" library="Selenium2Library">
@@ -102,22 +102,18 @@
 <arguments>
 <arg>${WELCOME PAGE TITLE}</arg>
 </arguments>
-<msg timestamp="20180726 07:56:38.474" level="INFO">Page title is 'Amazon.com: Online Shopping for Electronics, Apparel, Computers, Books, DVDs &amp; more'.</msg>
-<status status="PASS" starttime="20180726 07:56:38.450" endtime="20180726 07:56:38.475"></status>
+<msg timestamp="20180727 07:55:29.532" level="INFO">Page title is 'Amazon.com: Online Shopping for Electronics, Apparel, Computers, Books, DVDs &amp; more'.</msg>
+<status status="PASS" starttime="20180727 07:55:29.515" endtime="20180727 07:55:29.532"></status>
 </kw>
-<status status="PASS" starttime="20180726 07:56:38.449" endtime="20180726 07:56:38.476"></status>
+<status status="PASS" starttime="20180727 07:55:29.514" endtime="20180727 07:55:29.533"></status>
 </kw>
-<kw name="Close Browser" library="Selenium2Library" type="teardown">
-<doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20180726 07:56:38.480" endtime="20180726 07:56:38.598"></status>
-</kw>
-<status status="PASS" starttime="20180726 07:56:14.718" endtime="20180726 07:56:38.598" critical="yes"></status>
+<status status="PASS" starttime="20180727 07:55:07.250" endtime="20180727 07:55:29.533" critical="yes"></status>
 </test>
 <doc>A test suite with a single test for valid login.
 
 This test has a workflow that is created using keywords in
 the imported resource file.</doc>
-<status status="PASS" starttime="20180726 07:56:14.550" endtime="20180726 07:56:38.602"></status>
+<status status="PASS" starttime="20180727 07:55:07.047" endtime="20180727 07:55:29.536"></status>
 </suite>
 <statistics>
 <total>
@@ -127,7 +123,7 @@ the imported resource file.</doc>
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" id="s1" name="robotExample">robotExample</stat>
+<stat pass="1" fail="0" id="s1" name="Sample">Sample</stat>
 </suite>
 </statistics>
 <errors>
